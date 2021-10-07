@@ -2,7 +2,21 @@ import { combineReducers } from 'redux';
 import currentVideo from './currentVideo.js';
 import videoList from './videoList.js';
 
-var rootReducer = () => {};
+// const rootReducer = Redux.combineReducers({
+//   counter: counterReducer,
+//   other: countReducer2
+// });
+
+// var rootReducer = combineReducers({
+//   currentVideo: currentVideo,
+//   videoList: videoList
+// });
+
+var rootReducer = combineReducers({currentVideo, videoList});
+// This would produce the following state object
+
+
+
 
 //TODO: define the root reducer for this app
 
