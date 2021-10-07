@@ -12,9 +12,15 @@ var mapStateToProps = function(state) {
   };
 };
 
-var mapDispatchToProps = function(dispatch) {
+// var mapDispatchToProps = function(dispatch) {
+//   return {
+//     handleVideoListEntryTitleClick: (type) => dispatch({ type })
+//   };
+// };
+
+var mapDispatchToProps = (dispatch) => {
   return {
-    handleVideoListEntryTitleClick: (type) => dispatch({ type })
+    handleVideoListEntryTitleClick: (video) => dispatch(changeVideo(video))
   };
 };
 

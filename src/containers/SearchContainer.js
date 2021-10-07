@@ -17,10 +17,16 @@ import handleSearchChange from '../actions/search.js';
 //   };
 // };
 
-var mapDispatchToProps = function(dispatch) {
+// var mapDispatchToProps = function(dispatch) {
+//   return {
+//     //dispatch(changeVideoList(videos));
+//     handleSearchInputChange: (type) => dispatch({ type })
+//   };
+// };
+
+var mapDispatchToProps = (dispatch) => {
   return {
-    //dispatch(changeVideoList(videos));
-    handleSearchInputChange: (type) => dispatch({ type })
+    handleSearchInputChange: (video) => dispatch(handleVideoSearch(video))
   };
 };
 

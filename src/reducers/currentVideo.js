@@ -26,5 +26,5 @@ var currentVideoReducer = (state = null, action) => {
   }
 
 };
-
+// console.log('reducer: ', currentVideoReducer);
 export default currentVideoReducer;
